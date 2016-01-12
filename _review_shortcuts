@@ -1,0 +1,9 @@
+u - undo
+Ctrl+shift+r - redo
+repeat - . 
+v - select in visual
+V - select lines in visual
+d - cut
+y - copy 
+p - paste after
+P - paste before
