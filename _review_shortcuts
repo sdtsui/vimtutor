@@ -7,3 +7,7 @@ d - cut
 y - copy 
 p - paste after
 P - paste before
+
+
+view:
+:%y+ - select all (with clipboard enabled) 
