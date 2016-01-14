@@ -1,0 +1,79 @@
+The Roots of Lisp, Paul Graham
+
+
+1. Seven Primitive Operators.
+
+Expression: sequence of letters or a list or zero or more expressions
+foo
+()
+
+
+lists are (operator, arguments ...)
+
+7 Primitives: 
+quote􏰀 atom􏰀 eq􏰀 car􏰀 cdr􏰀 cons􏰀 and cond
+
+quote x returns x
+atom x returns t /truthy or () / falsy
+
+unquoted list is code --- 
+quoted list is a list --- protected from evaluation
+
+"code and data are made out of the same data structures, and the quote operator is the way we distinguish between them"
+
+
+EQ returns t if both inputs are empty list, and () otherwise
+
+CAR expects value of x to be a list, returns its first element
+
+CDR like car, returns rest...
+
+
+CONS 􏰏cons x y􏰐 exp ects the value of y to b e a list􏰀 and returns a list containing the value of x followed by the elements of the value of y􏰅
+
+
+􏰏cond 􏰏p􏰁 e􏰁􏰐 􏰌 􏰌 􏰌 􏰏pn en􏰐􏰐 is evaluated as follows􏰅 The p expressions are evaluated in order until one returns t􏰅 When one is found􏰀 the value of
+the corresp onding e expression is returned as the expression􏰅
+
+Quote and cond are evaluated differently:
+When a quote expression is evaluated􏰀 its argument is not evaluated􏰀 but is simply
+returned as the value of the whole quote expression􏰅 And in a valid cond expression􏰀 only an
+L􏰈shap ed path of sub expressions will b e evaluated􏰅
+
+
+
+2. DENOTING FUNTIONS:
+􏰏􏰏lambda 􏰏p􏰁 􏰌 􏰌 􏰌 pn􏰐 e􏰐 a􏰁 􏰌 􏰌 􏰌 an􏰐
+is called a function cal l and its value is computed as follows􏰅 Each expression ai is evaluated􏰅 Then e is evaluated􏰅 During the evaluation of e􏰀 the value of
+any o ccurrence of one of the pi is the value of the corresp onding ai in recent function call􏰅
+
+
+In other words􏰀 parameters can b e used as arguments􏰌
+􏰛 􏰏􏰏lambda 􏰏f􏰐 􏰏f 􏰋􏰏b c􏰐􏰐􏰐 􏰋􏰏lambda 􏰏x􏰐 􏰏cons 􏰋a x􏰐􏰐􏰐
+
+pg5
+
+
+
+
+___________________________________________________________________
+
+Terms: 
+
+Vars
+not reified at runtime
+many development time uses of reification are obviated by access to Clojure data structures via the analyzer
+
+
+__________
+
+fn notes
+There is currently no runtime enforcement of arity when calling a fn
+
+
+___________
+
+String vs Keyword vs Symbol
+
+
+label vs y combinator
