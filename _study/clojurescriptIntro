@@ -1,0 +1,5 @@
+http://clojurescriptkoans.com/#vectors/1
+Cons
+conjoin
+peek, first element
+pop, removes from front
