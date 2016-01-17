@@ -11,7 +11,3 @@ P - paste before
 
 view:
 :%y+ - select all (with clipboard enabled) 
-
-
-Bash:
-home, end - fn + left arrow, fn+right arrow
