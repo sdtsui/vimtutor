@@ -11,17 +11,16 @@ alias kc="killall -9 Google\ Chrome"
 
 #Git
 alias st="git status"
-alias lg="git log"
 alias cm="git commit -m"
 alias pu="git push"
 alias aa="git add --all :/"
 alias co="git checkout"
 alias br="git branch"
-alias yolo="git commit -am 'YOLO' && git push -f origin master"
+alias gyolo="git commit -am 'YOLO' && git push -f origin master"
 alias gl="git log"
 alias glo="git log --oneline"
 alias cl="git clone"
-alias lr="git remote --v" #list remotes
+alias glr="git remote --v" #list remotes
 alias grbo="git pull --rebase origin" #only to origin
 alias grbo="git pull --rebase"
 alias gri="git rebase --interactive" #interactive rebase
@@ -58,3 +57,5 @@ function cs () {
 
 # ClojureScript
 alias cl-build="java -cp cljs.jar:src clojure.main build.clj"
+
+
