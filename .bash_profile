@@ -20,12 +20,13 @@ alias gyolo="git commit -am 'YOLO' && git push -f origin master"
 alias gl="git log"
 alias glo="git log --oneline"
 alias cl="git clone"
-alias glr="git remote --v" #list remotes
+alias grl="git remote --v" #list remotes
 alias grbo="git pull --rebase origin" #only to origin
 alias grbo="git pull --rebase"
 alias gri="git rebase --interactive" #interactive rebase
 alias gd="git diff"
 alias gca="git commit --amend"
+alias gbd="git branch -D"
 
 #Sublime
 alias sa="subl ."
