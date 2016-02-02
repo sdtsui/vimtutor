@@ -8,6 +8,12 @@ y - copy
 p - paste after
 P - paste before
 
+Movement Shortcuts:
+e, ge - traverse by end of word
+w, b - traverse by beginning of word
+tx/Tx - before/after x
+fx/Fx - FIND ;,';??? (unsure)
+
 
 view:
 :%y+ - select all (with clipboard enabled) 
